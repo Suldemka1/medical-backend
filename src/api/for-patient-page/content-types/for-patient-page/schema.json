@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "for_patient_pages",
+  "info": {
+    "singularName": "for-patient-page",
+    "pluralName": "for-patient-pages",
+    "displayName": "For Patient Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "sorting": {
+      "type": "integer",
+      "max": 1000,
+      "default": 500,
+      "min": 100,
+      "required": true
+    },
+    "page": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.static-page"
+    }
+  }
+}
